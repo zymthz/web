@@ -42,6 +42,7 @@ section{
 }
 #text a{
     font-size: 2.5rem;
+    font-weight: bolder;
     color: red;
     text-decoration: none;
     border: red solid 0.3rem;
@@ -54,17 +55,27 @@ section{
 /*RESPONSIVE*/
 @media (max-width: 768px){
     section{
-        border: red solid;
         width: auto;
         display: block;
+        text-align: center;
+        
     }
     #text h1{
-        font-size: 2.5rem;
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
     }
     #text p{
-        font-size: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 2rem;
     }
     #text{
-        border: red solid;
+        width: auto;
+    }
+    section img{
+        margin: 2rem;
+        width: 22rem;
+
     }
 }
