@@ -26,6 +26,7 @@ body{
     animation: animate 5s linear infinite; 
     animation-duration: calc(30s / var(--i));
     opacity: 0.7;
+    z-index: 1;
 
 }
 
@@ -83,6 +84,7 @@ header img{
     padding: 2.5rem;
     width: 9rem;
     z-index: 101;
+    
 }
 
 /*SECTION*/
@@ -108,12 +110,15 @@ section{
     font-weight: bolder;
     font-style: italic;
     margin: 0;
+    z-index: 101;
 }
 #text span{
     background-color: red;
+    z-index: 101;
 }
 #text p{
     font-size: 2rem;
+    z-index: 101;
 }
 #text a{
     font-size: 2.5rem;
@@ -123,6 +128,7 @@ section{
     border: red solid 0.3rem;
     padding: 1rem;
     align-self: center;
+    z-index: 101;
 }
 
 /*IMG*/
@@ -133,6 +139,10 @@ section img{
 /*RESPONSIVE*/
 @media (max-width: 768px){
    
+    .background{
+    z-index: 1;
+    }   
+
     .header img{
         z-index: 100;
     }
