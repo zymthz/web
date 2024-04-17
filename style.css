@@ -14,6 +14,7 @@ body{
     height: 100%;
     overflow: hidden;
     z-index: 1;
+
 }
 
 .image {
@@ -24,41 +25,47 @@ body{
     background-position: center;
     animation: animate 5s linear infinite; 
     animation-duration: calc(30s / var(--i));
-    opacity: 0.4;
-    z-index: 1;
+    opacity: 0.7;
+
 }
 
 .image1 {
     background-image: url('img/1.png'); 
     transform: translate(-50%, 50%);
     left: 10%;
+    
 }
 
 .image2 {
     background-image: url('img/2.png'); 
     left: 20%;
     transform: translate(-50%, 50%);
+    
 }
 
 .image3 {
     background-image: url('img/3.png'); 
     left: 30%;
     transform: translate(-50%, 50%);
+    
 }
 .image4 {
     background-image: url('img/1.png'); 
     left: 40%;
     transform: translate(-50%, 50%);
+    
 }
 .image5{
     background-image: url('img/2.png');
     left: 50%;
     transform: translate(-50%, 50%);
+    
 }
 .image6{
     background-image: url('img/3.png');
     left: 60%;
     transform: translate(-50%, 50%);
+    
 }
 
 @keyframes animate {
@@ -75,7 +82,7 @@ body{
 header img{
     padding: 2.5rem;
     width: 9rem;
-    z-index: 999;
+    z-index: 101;
 }
 
 /*SECTION*/
@@ -150,3 +157,143 @@ section img{
 
     }
 }
+
+/*FORMULARIO*/
+form{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    width: 100px;
+
+    margin: 2rem auto;
+}
+
+.content{
+    margin: auto;
+    height: max-content;
+}
+.inputs{
+    display: flex;
+    align-items: center;
+    background-color: #272626;
+    padding: 0 1rem 0 1rem;
+    margin: 1.5rem 0;
+    border-radius: 1.5rem;
+}
+.field{
+    background-color: transparent;
+    margin: 0.5rem;
+    width:  24rem;
+    height: 3rem;
+    border: 0;
+    color: white;
+    font-family: "nunito";
+    font-weight: bolder;
+    padding-left: 0.5rem;
+    outline: none;
+}
+.field::placeholder{
+    color: white;
+}
+.inputs i{
+    font-size: 19px;
+    border-right: #737373 solid 1.5px;
+    padding-right: 1rem;
+    height: 22px;
+    padding-top: 0.5rem;
+}
+#icon-email{
+    font-size: 17px;
+}
+#date::-webkit-calendar-picker-indicator  {
+    display: none; /* Oculta el icono del calendario */
+  }
+
+/*seleción de orientación sexual*/
+
+.select{
+    display: flex;
+}
+
+.orientacion-mujer label{
+    color: white;
+    font-size: 43px;
+}
+.orientacion-hombre label{
+    color: white;
+    font-size: 43px;
+}
+.orientacion-otro label{
+    color: white;
+    font-size: 43px;
+}
+.select input{
+    display: none;
+}
+
+
+.orientacion-mujer input + label i:before{
+    
+    display: flex;
+    width: 100px;
+    height: 45px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: #CB6CE6;
+    justify-content: center;
+}
+
+.orientacion-hombre input[type="radio"] + label i:before{
+    
+    display: flex;
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: #38B6FF;
+    justify-content: center;
+}
+
+.orientacion-otro input + label i:before{
+    
+    display: flex;
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: #f5f5f5;
+    background-image: linear-gradient(to right, #FF66C4, #FFDE59);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+.select input:checked + label i:before{
+    border: red solid 2px;
+    outline: none;
+}
+/*boton de enviar*/
+.submit{
+    width: 100%;
+    font-family: "arimo";
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+    margin-top: 2rem;
+    background-color: red;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+}
+
+
+
+
+

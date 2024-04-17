@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    
+    <style>
+
+        body{
+            background-color: black;
+        }
+        .select{
+            display: flex;
+        }
+        .orientacion-mujer label{
+            color: white;
+            font-size: 43px;
+        }
+        .orientacion-hombre label{
+            color: white;
+            font-size: 43px;
+        }
+        .orientacion-otro label{
+            color: white;
+            font-size: 43px;
+        }
+        .select input{
+            display: none;
+        }
+
+        .orientacion-mujer input + label i:before{
+            
+            display: flex;
+            width: 100px;
+            height: 45px;
+            border-radius: 10px;
+            margin: 10px;
+            background-color: #CB6CE6;
+            justify-content: center;
+        }
+
+        .orientacion-hombre input[type="radio"] + label i:before{
+            
+            display: flex;
+            width: 100px;
+            height: 45px;
+            border-radius: 10px;
+            margin: 10px;
+            background-color: #38B6FF;
+            justify-content: center;
+        }
+
+        .orientacion-otro input + label i:before{
+            
+            display: flex;
+            width: 100px;
+            height: 45px;
+            border-radius: 10px;
+            margin: 10px;
+            background-color: #f5f5f5;
+            background-image: linear-gradient(to right, #FF66C4, #FFDE59);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+        }
+
+        .select input:checked + label i:before{
+            border: red solid 2px;
+            outline: none;
+        }
+        
+
+
+       
+        
+
+
+    </style>
+        
+        <div class="select">
+            <div class="orientacion-mujer">
+                <input type="radio" id="orientacion-mujer" name="orientacion" value="mujer" required>
+                <label for="orientacion-mujer"><i class="fa-solid fa-venus"></i></label>
+            </div>
+
+            <div class="orientacion-hombre">
+                <input type="radio" id="orientacion-hombre" name="orientacion" value="hombre" required>
+                <label for="orientacion-hombre"> <i class="fa-solid fa-mars-stroke-up"></i></label>
+            </div>
+
+            <div class="orientacion-otro">
+                <input type="radio" id="orientacion-otro" name="orientacion" value="otro" required>
+                <label for="orientacion-otro" > <i class="fa-solid fa-transgender"></i></label>
+            </div>
+        </div>
+
+        
+
+</body>
+</html>
