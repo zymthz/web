@@ -1,4 +1,5 @@
-let signUp = document.getElementById("signUp");
-let nameInput = document.getElementById("nameInput");
-let title = document.getElementById("title");
+    const preloader= document.querySelector(".background-div");
 
+    window.addEventListener("load", () =>{
+        preloader.style.display= "none" ;
+    })
